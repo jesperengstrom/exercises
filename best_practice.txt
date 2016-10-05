@@ -1,0 +1,58 @@
+/*
+
+Att veta vad som är rätt är inte lätt. Vi ska ännu en gång spana på internet men nu inte efter trender utan best practice. Din uppgift blir nu att försöka leta reda på rätt sätt att skriva JavaScript. Använd flera källor och se om du hittar en gemensam nämnare bland källorna för hur man ska ska arbeta med JavaScript. Psst, det är inte säkert att det finns ett "rätt sätt".
+
+Sök på nätet (alla källor är tillåtna) efter efter vad som är best practice i JavaScript gällande följande:
+Indentering
+Namngivning av variabler och funktioner
+Deklaration av variabler och funktioner
+Kommentering av kod
+Hur man skriver syntax för if/while/for-loopar
+Hur man ska använda lokala och globala variabler
+Använd minst två olika källor för att kolla vad som gäller för best practice
+Är källorna överens på samtliga punkter eller finns det skillnader?
+Sammanställ en lista på vad som verkar vara best practice gällande punkterna ovan.
+Diskutera med en annan i klassen om det finns eventuella skillnader mellan vad ni hittat.
+Pusha gärna upp ert resultat till ert eget repo. En bra idé är att ha ett repo för olika övningar ni gör under lektionerna och sedan pusha upp textfiler eller javascriptfiler man använder under lektionerna. På så sätt kan jag även komma åt dem och se vad ni har gjort.
+
+*/
+
+BEST PRACTICE I JS ANGÅENDE..
+
+INDENTERING
+
+* Kodblock bör indenteras med 4 mellanslag.
+* Tabbar bör ställas in så att de motsvarar 4 mellanslag i editorn.
+* Välj space eller tabs för indentering och var konsekvent, blanda inte!
+* ... Andra säger att tabbar ALDRIG ska användas eftersom olika editorer tolkar tabs olika.
+
+NAMNGIVNING AV VARIABLER O FUNKTIONER
+* i JS verkar camelCasing vara det som de flesta föredrar. I vilket fall: var konsekvent!
+* använd meningsfulla namn till variabler o funktioner - så att man förstår deras syfte!
+* ... Man ser väldigt ofta förkortningar av tids- och utrymmesskäl (usrAvail), men ändå menar många att begriplighet
+och läsbarhet alltid går först (isUserAvailable).
+
+DEKLARATION VARIABLER / FUNKTIONER
+* Deklarera varabler så samlat som möjligt och så tidigt som möjligt, t.ex i toppen av en funktion. Detta
+Ger renare kod, bättre läsbarhet och minimerar risken för misstag (tex kollissioner).
+* Tilldela variabler värde redan när du reklarerar dem. Minskar risken för 'undefined'
+* ... Och när man deklarerar många variabler kan man skippa 'var' varje gång: 
+	var someItem = 'some string', 
+		anotherItem = 'another string';
+* Använd alltid semikolon i slutet, även om det funkar utan. Gäller alla expressions ;
+
+KOMMENTERING AV KOD
+* Kommentera ALLTID koden. Annars kommer varken du eller andra att förstå hur du tänkte när du återvänder till den.
+
+SYNTAX FÖR IF/WHILE FOR
+* använd alltid {} efter villkoret. Att skippa dessa (shorthand) funkar, men kan orsaka problem.
+* De flesta verkar föredra att skriva den inledande { på samma rad som funktionen initieras.
+* Variabler som vi vill använda i for-loopar bör deklareras utanför loopen. Annars deklareras de om och om igen och slöar ner!
+
+ANVÄNDNING AV LOKALA O GLOBALA VARIABLER
+* Deklarera så få globala variabler som möjligt, pga risken att de kolliderar med andra variabler och skriver över värden.
+"Reduce your global footprint" --> Ett enkelt sätt är att skapa ett objekt som blir ett separat namespace.
+* ... Alla varabler som används i en funktion bör deklareras som lokala variabler. + Använd alltid 'var', annars 
+blir de globala!
+
+
